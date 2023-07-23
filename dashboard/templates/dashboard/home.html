@@ -1,0 +1,68 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="notes">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notes
+            </h5>
+            <p>Create Notes to refer them later. They are stored permanently until deleted</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="videos">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/youtube.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Videos
+            </h5>
+            <p>Search Videos and select your desired video to play it from youtube.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+      <div class="col-md-3">
+        <a href="todo">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/to-do.jpg' %}" alt="Notes image">
+            <div class="card-body">
+              <h5 class="card-title ">
+                To Do
+              </h5>
+              <p>Add your to-do lists for your day and remove them as you finish</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <div class="col-md-3">
+        <a href="wikipedia">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image">
+            <div class="card-body">
+              <h5 class="card-title ">
+                Wikipedia
+              </h5>
+              <p>Homework and Assignments? Search wikipedia to get fast results</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div>
+</section>
+{% endblock content %}
